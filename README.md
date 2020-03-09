@@ -1,21 +1,2 @@
-# y
-
-> y
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+基于vuea的城市选择组件，后续会加上定位功能，待续.....
+没找到城市列表的免费接口，所以在CSDN上用了一个老兄的city.json，做假接口模拟操作。

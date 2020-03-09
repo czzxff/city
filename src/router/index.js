@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Swiper from '@/App'
+import Home from '@/components/home.vue'
+import City from "@/components/city.vue"
 
 Vue.use(Router)
 
@@ -8,8 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'swiper',
-      component: Swiper
-    }
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/city',
+      name: 'city',
+      component: City
+    },
   ]
 })

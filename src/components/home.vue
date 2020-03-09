@@ -1,13 +1,31 @@
 <template>
- <div id="app">
-   <router-view/>
- </div>
+  <header>
+    <div id="usercity" @click="gocity()">
+      <span>{{this.$store.state.locatecityname}}</span>
+      <img src="@/assets/icon/more.png"  class="icon-img">
+    </div>
+    <div id="search">
+      <input type="text">
+      <img src="@/assets/icon/search.png" class="icon-img">
+    </div>
+    <img src="@/assets/icon/info.png" class="icon-img" id="info-img">
+  </header>
 </template>
 
 <script>
- export default {
-   name: 'App'
- }
+  import axios from 'axios'
+  export default{
+          data(){
+              return{
+
+              }
+          },
+          methods:{
+            gocity() {
+            	this.$router.push('/city');
+            }
+          }
+      }
 </script>
 
 <style>
